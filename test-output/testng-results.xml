@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="42157" started-at="2016-02-28T15:23:01Z" finished-at="2016-02-28T15:23:43Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="42157" started-at="2016-02-28T15:23:01Z" finished-at="2016-02-28T15:23:43Z">
+      <class name="com.vsii.tsc.TSCSelenium03.tranglt.LoginTest">
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.LoginTest@18e8568]" name="loginFail" duration-ms="6068" started-at="2016-02-28T22:23:05Z" data-provider="getData" finished-at="2016-02-28T22:23:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tranglt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456546]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.LoginTest@18e8568]" name="loginFail" duration-ms="3292" started-at="2016-02-28T22:23:11Z" data-provider="getData" finished-at="2016-02-28T22:23:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tranglt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.LoginTest@18e8568]" name="loginFail" duration-ms="3182" started-at="2016-02-28T22:23:14Z" data-provider="getData" finished-at="2016-02-28T22:23:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tutorial]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="loginFail(java.lang.String, java.lang.String)[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.LoginTest@18e8568]" name="loginFail" duration-ms="3963" started-at="2016-02-28T22:23:17Z" data-provider="getData" finished-at="2016-02-28T22:23:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tutorial]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFail -->
+        <test-method status="PASS" signature="loginSucc()[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.LoginTest@18e8568]" name="loginSucc" duration-ms="5336" started-at="2016-02-28T22:23:21Z" finished-at="2016-02-28T22:23:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucc -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.tranglt.LoginTest -->
+      <class name="com.vsii.tsc.TSCSelenium03.tranglt.TestBase">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.TestBase@71cca7]" name="beforeClass" is-config="true" duration-ms="14171" started-at="2016-02-28T22:22:47Z" finished-at="2016-02-28T22:23:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.TestBase@71cca7]" name="tearDown" is-config="true" duration-ms="3912" started-at="2016-02-28T22:23:43Z" finished-at="2016-02-28T22:23:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.tranglt.TestBase -->
+      <class name="com.vsii.tsc.TSCSelenium03.tranglt.FlightFinderTest">
+        <test-method status="PASS" signature="find()[pri:0, instance:com.vsii.tsc.TSCSelenium03.tranglt.FlightFinderTest@1fe5c6f]" name="find" duration-ms="16729" started-at="2016-02-28T22:23:26Z" finished-at="2016-02-28T22:23:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- find -->
+      </class> <!-- com.vsii.tsc.TSCSelenium03.tranglt.FlightFinderTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
