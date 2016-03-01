@@ -3,20 +3,24 @@
 	<property name="build.dir" value="${basedir}/build" />
 	<property name="external.jars" value=".\resource" />
 	<property name="selenium.jars" value=".\selenium" />
+	<property name="libs.jars" value=".\libs" />
 	<property name="POI.jars" value=".\POI" />
 	<property name="src.dir" value="${basedir}/src" />
+	
 	<target name="loadTestNG" depends="setClassPath">
 		<taskdef resource="testngtasks" classpath="${test.classpath}" />
 	</target>
+	
 	<target name="setClassPath">
 		<path id="classpath_jars">
 			<pathelement path="${basedir}/" />
 			<fileset dir="${external.jars}" includes="*.jar" />
 			<fileset dir="${selenium.jars}" includes="*.jar" />
-			<fileset dir="${POI.jars}" includes="*.jar" />
+			<fileset dir="${libs.jars}" includes="*.jar" />
 		</path>
 		<pathconvert pathsep=";" property="test.classpath" refid="classpath_jars" />
 	</target>
+	
 	<target name="clean">
 		<echo message="deleting existing build directory" />
 		<delete dir="${build.dir}" />
@@ -32,9 +36,28 @@
 			<classpath refid="classpath_jars" />
 		</javac>
 	</target>
+	
 	<target name="runTestNGWithAnt" depends="compile">
 		<testng classpath="${test.classpath};${build.dir}">
 			<xmlfileset dir="${basedir}" includes="testng.xml" />
 		</testng>
 	</target>
+	
+	<target name="install" depends="runTestNGWithAnt">
+	                 
+	    <xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/testng-results.xsl" out="${basedir}/testng-xslt/index.html" processor="SaxonLiaison">
+	                        
+	            <param expression="${basedir}/testng-xslt/" name="testNgXslt.outputDir" />
+
+	            <param expression="true" name="testNgXslt.sortTestCaseLinks" />
+
+	            <param expression="FAIL,SKIP,PASS,CONF,BY_CLASS" name="testNgXslt.testDetailsFilter" />
+
+	            <param expression="true" name="testNgXslt.showRuntimeTotals" />
+
+	            <classpath refid="classpath_jars">
+	            </classpath>
+	        </xslt>
+	    </target>
+	 
 </project>
